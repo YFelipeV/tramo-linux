@@ -549,7 +549,7 @@ export const validarAdmin = async () => {
 
 export const Loguot = async () => {
   const response = await fetch(
-    "https://rest-api-tramo-production.up.railway.app/logout"
+    "http://localhost:4000/logout"
   );
   const data = response.json();
   localStorage.removeItem("token");
